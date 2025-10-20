@@ -1,0 +1,131 @@
+@import "resets.css";
+@import "fonts.css";
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --ga-around: 40px;
+}
+
+#in-animation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 100px var(--ga-around);
+    animation: color-in 2000ms ease-out both;
+    h1 {
+        animation: fade-slide-in 250ms ease-in-out 100ms both;
+    }
+    p {
+        animation: fade-slide-in 250ms ease-in-out 140ms both;
+    }
+}
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes color-in {
+    0% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: orange;
+    }
+    100% {
+        background-color: orangered;
+    }
+}
+
+#transition {
+    background: #dddddd;
+    padding: var(--ga-around);
+    button {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background-color: blue;
+        padding: 6px 14px;
+        border-radius: 9999px;
+        cursor: pointer;
+        border: none;
+        transition: background-color 200ms ease-in;
+        span {
+            color: white;
+        }
+        svg {
+            fill: white;
+            width: 18px;
+            height: 18px;
+            transition: transform 200ms ease-in;
+        }
+        &:hover {
+            background-color: darkblue;
+            svg {
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+#animation {
+    background: #f1f1f1;
+    padding: var(--ga-around);
+    svg {
+        width: 50px;
+        height: 50px;
+        animation: rotate 1500ms ease-in-out infinite;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.reveals {
+    background: #dddddd;
+    &:nth-of-type(odd) {
+        background: yellow;
+    }
+    &:nth-of-type(even) {
+        background: orange;
+    }
+    padding: var(--ga-around);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    overflow: clip;
+    height: 100vh;
+    .box {
+        padding: calc(var(--ga-around) / 2);
+        background-color: blue;
+        color: white;
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        transition: transform 400ms ease-out, opacity 400ms ease-out, background-color 200ms ease-in-out;
+        overflow: clip;
+        &.hidden {
+            transform: translateY(80px);
+            opacity: 0;
+        }
+        &:hover {
+            background-color: darkblue;
+        }
+    }
+}
