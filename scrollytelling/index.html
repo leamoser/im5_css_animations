@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- First Parallax Section -->
+<div class="parallax-container bg-image-1">
+    <span class="parallax-text">Scroll Down</span>
+</div>
+<!-- First Content Section -->
+<div class="content-section">
+    <h2>What is Parallax?</h2>
+    <p>
+        Parallax scrolling is a web design technique where background images move past the camera more slowly than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion. This simple example uses the CSS `background-attachment: fixed;` property to achieve the effect.
+    </p>
+</div>
+<!-- Second Parallax Section -->
+<div class="parallax-container bg-image-2">
+    <span class="parallax-text">A 3D Illusion</span>
+</div>
+<!-- Second Content Section (Dark Theme) -->
+<div class="content-section dark">
+    <h2>How It Works</h2>
+    <p>
+        The magic comes from `background-attachment: fixed;`. This CSS rule tells the browser to keep the background image's position fixed relative to the viewport. As you scroll, the content blocks (like this one) move normally, but the background image stays in place, revealing more of itself. The small JavaScript snippet below enhances this for an even smoother effect on some browsers by adjusting the background position slightly during the scroll.
+    </p>
+</div>
+<!-- Third Parallax Section -->
+<div class="parallax-container bg-image-3">
+    <span class="parallax-text">The End</span>
+</div>
+<script src="script.js" type="module"></script>
+</body>
+</html>

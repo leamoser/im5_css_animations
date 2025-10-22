@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.8;
+}
+
+.parallax-container {
+    height: 70vh;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image-1 {
+    background-image: url('https://images.unsplash.com/photo-1498550744921-75f79806b8a7?q=80&w=2070&auto=format&fit=crop');
+}
+.bg-image-2 {
+    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop');
+}
+.bg-image-3 {
+    background-image: url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2070&auto=format&fit=crop');
+}
+
+.parallax-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.content-section.dark {
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
