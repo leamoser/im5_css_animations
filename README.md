@@ -1,13 +1,5 @@
 # IM5 - CSS Animations
 
-## Themen
-- Grundlagen Transitions
-- Grundlagen Animationen
-- Animation Performance
-- In-Animationen
-- Intersection Observer
-- Scrollytelling
-
 ## Quellen
 - [Kurs: Learn CSS Animation](https://www.kirupa.com/html5/learn_animation.htm)
 - [Animation Performance](https://www.joshwcomeau.com/animation/css-transitions/#animation-performance)
